@@ -37,6 +37,11 @@ $ composer install
 DMA_BASE_URI=
 DMA_API_ENDPOINT="${DMA_BASE_URI}/api/v1"
 
+
+# Puede acceder al usuario mediante el request 
+
+request()->user() o $request->user()
+
 ```
 
 ## Contribución
