@@ -54,6 +54,6 @@ class DMAServiceProvider extends ServiceProvider
      */
     protected function registerMiddlewares(): void
     {
-        $this->app['router']->aliasMiddleware('auth:dma', DMAuthentication::class);
+        $this->app['router']->aliasMiddleware('dmauth', DMAuthentication::class);
     }
 }
