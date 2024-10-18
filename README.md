@@ -79,4 +79,4 @@ Si descubre una vulnerabilidad de seguridad dentro de la aplicación, debera cre
 
 ## Licencia
 
-Es un software de código abierto con licencia [licencia MIT] (https://opensource.org/licenses/MIT) para uso exclusivo de **Ducter**.
+Es un software de código abierto con licencia [licencia MIT](https://opensource.org/licenses/MIT) para uso exclusivo de **Ducter**.
