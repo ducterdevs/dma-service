@@ -6,7 +6,7 @@ use Ducterdevs\DucterMasterAuthentication\DMA;
 use Ducterdevs\DucterMasterAuthentication\Http\Middleware\DMAuthentication;
 use Illuminate\Support\ServiceProvider;
 
-class EnergizerServiceProvider extends ServiceProvider
+class DMAServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
