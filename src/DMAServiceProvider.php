@@ -35,7 +35,7 @@ class DMAServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__ . '/../config/dma.php' => config_path('dma.php'),
-            ], ['dma', 'dma-config']);
+            ], ['dma-config']);
         }
     }
 
