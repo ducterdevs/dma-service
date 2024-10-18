@@ -14,8 +14,8 @@ class DMAServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/energizer.php',
-            'energizer'
+            __DIR__ . '/../config/dma.php',
+            'dma'
         );
 
         $this->app->singleton(DMA::class);
