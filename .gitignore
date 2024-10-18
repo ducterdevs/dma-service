@@ -1,0 +1,10 @@
+/.idea
+/.fleet
+/.vscode
+/node_modules
+/public/app.js.LICENSE.txt
+/vendor
+composer.lock
+package-lock.json
+.env
+.idea

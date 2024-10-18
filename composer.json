@@ -1,0 +1,44 @@
+{
+    "name": "ducterdevs/dma-service",
+    "description": "Servicio para autenticarse con la API De Ducter master authentication",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ducterdevs\\DucterMasterAuthentication\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Efren David Colin Perez",
+            "email": "efren.colin@ducter.com.mx"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/auth": "^11.0",
+        "illuminate/config": "^11.0",
+        "illuminate/console": "^11.0",
+        "illuminate/contracts": "^11.0",
+        "illuminate/database": "^11.0",
+        "illuminate/events": "^11.0",
+        "illuminate/http": "^11.0",
+        "illuminate/support": "^11.0",
+        "illuminate/translation": "^11.0",
+        "illuminate/validation": "^11.0",
+        "nesbot/carbon": "^2.67|^3.0"
+    },
+    "conflict": {
+        "nunomaduro/collision": "<7.7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ducterdevs\\DucterMasterAuthentication\\DMAServiceProvider"
+            ],
+            "aliases": {
+                "DucterMasterAuthentication": "Ducterdevs\\DucterMasterAuthentication\\Facades\\DMA"
+            }
+        }
+    }
+}
