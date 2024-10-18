@@ -3,7 +3,7 @@
 namespace Ducterdevs\DucterMasterAuthentication;
 
 use Ducterdevs\DucterMasterAuthentication\DMA;
-use Illuminate\Contracts\Foundation\Application;
+use Ducterdevs\DucterMasterAuthentication\Http\Middleware\DMAuthentication;
 use Illuminate\Support\ServiceProvider;
 
 class EnergizerServiceProvider extends ServiceProvider
@@ -26,6 +26,7 @@ class EnergizerServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        $this->registerMiddlewares();
         $this->registerPublishing();
         $this->registerCommands();
     }
@@ -51,5 +52,13 @@ class EnergizerServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([]);
         }
+    }
+
+     /**
+     * Register the package's commands.
+     */
+    protected function registerMiddlewares(): void
+    {
+        $this->app['router']->aliasMiddleware('auth:dma', DMAuthentication::class);
     }
 }
